@@ -17,19 +17,14 @@ struct ContentView: View {
 			- value: [in] The number to return
 		- Returns: The parameter passed to it
 	*/
-	func identity(value : Int) -> Int
+	public func identity(value : Int) -> Int
     {
     return value
 	 }
 
-	func two() -> Int
+	public func two() -> Int
 	{
 	return identity(value: 6)
 	}
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
