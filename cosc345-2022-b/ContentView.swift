@@ -12,10 +12,10 @@ struct ContentView: View {
             .padding()
     }
 	/**
-		Example of Doxygen stuff in SWIFT
+		Example of SwiftDoc stuff in SWIFT.
 		- Parameters:
-			- value: [in] The number to return
-		- Returns: The parameter passed to it
+			- value: [in] The number to return.
+		- Returns: The parameter passed to it.
 	*/
 	public func identity(value : Int) -> Int
     {
