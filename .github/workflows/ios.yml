@@ -65,8 +65,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Generate Coverage
-        run: |
-          xcodebuild clean test -scheme cosc345-2022-b -project cosc345-2022-b.xcodeproj -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 11' -enableCodeCoverage YES 
-          curl -Os https://uploader.codecov.io/latest/macos/codecov
-          chmod +x codecov
-          ./codecov
+        run: xcodebuild clean test -scheme cosc345-2022-b -project cosc345-2022-b.xcodeproj -destination 'platform=iOS Simulator,OS=15.2,name=iPhone 11' -enableCodeCoverage YES 
+      - name: Upload to CodeCov
+        uses: codecov/codecov-action@1.2.1
