@@ -4,7 +4,6 @@
 //
 //  Created by Andrew Trotman on 11/08/22.
 //
-
 import SwiftUI
 
 struct ContentView: View {
@@ -12,6 +11,21 @@ struct ContentView: View {
         Text("Hello, world!")
             .padding()
     }
+	/**
+		Example of Doxygen stuff in SWIFT
+		- Parameters:
+			- value: [in] The number to return
+		- Returns: The parameter passed to it
+	*/
+	func identity(value : Int) -> Int
+    {
+    return value
+	 }
+
+	func two() -> Int
+	{
+	return identity(value: 6)
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
