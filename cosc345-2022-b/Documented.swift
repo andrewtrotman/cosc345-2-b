@@ -8,7 +8,7 @@
 import Foundation
 
 /**
-	Example of SwiftDoc stuff in SWIFT.
+	Example of SwiftDoc stuff in SWIFT for COSC345.
 	- Parameters:
 		- value: [in] The number to return.
 	- Returns: The parameter passed to it.
